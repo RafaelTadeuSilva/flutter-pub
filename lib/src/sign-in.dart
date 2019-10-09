@@ -24,11 +24,11 @@ Future<String> signInWithGoogle() async {
   assert(user.displayName != null);
   assert(user.photoUrl != null);
 
-  name = user.displayName;
-  email = user.email;
-  imageUrl = user.photoUrl;
-  if (name.contains(" ")) {
-    name = name.substring(0, name.indexOf(" "));
+  name2 = user.displayName;
+  email2 = user.email;
+  imageUrl2 = user.photoUrl;
+  if (name2.contains(" ")) {
+    name2 = name2.substring(0, name2.indexOf(" "));
   }
 
   final FirebaseUser currentUser = await _auth.currentUser();
@@ -42,6 +42,6 @@ void signOutGoogle() async {
   print("User Sign Out");
 }
 
-String name;
-String email;
-String imageUrl;
+String name2;
+String email2;
+String imageUrl2;

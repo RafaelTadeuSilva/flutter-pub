@@ -13,4 +13,9 @@ class SignIn{
   Future<String> teste(){
     return signInWithGoogle();
   }
+  
+  String image() => imageUrl2;
+  String name() => name2;
+  String email() => email2;
+
 }
