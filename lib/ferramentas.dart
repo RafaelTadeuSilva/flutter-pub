@@ -1,27 +1,25 @@
+
+
 library ferramentas;
-
 import 'package:ferramentas/src/sign-in.dart';
-
 /// A Calculator.
 class Calculator {
   /// Returns [value] plus 1.
   int addOne(int value) => value + 1;
 }
 
-class SignIn {
-  Future<String> teste() {
+
+class SignIn{
+  Future<String> loginGoogle(){
     return signInWithGoogle();
   }
-
-  String image() {
-    return imageUrl2;
+  
+  void logoutGoogle(){
+    return signOutGoogle();
   }
 
-  String name() {
-    return name2;
-  }
+  String image() => imageUrl2;
+  String name() => name2;
+  String email() => email2;
 
-  String email() {
-    return email2;
-  }
 }
